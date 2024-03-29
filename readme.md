@@ -32,17 +32,17 @@ root_path = /Users/edy/Documents/ypl/randomFileGenerator/version2/root
 N = 3
 ; 举例，当N=3的时候，会创建出来三层深度
 ;【Root】
-;		|
-;		| --- Folder_1_1
-;  	| 				| --- Folder_2_1
-;  	|					|				| --- Folder_3_1
-;  	|					|				| --- Folder_3_2
-;  	|					| --- Folder_2_2
+;	|
+;	| --- Folder_1_1
+;  	| 		| --- Folder_2_1
+;  	|		|		| --- Folder_3_1
+;  	|		|		| --- Folder_3_2
+;  	|		| --- Folder_2_2
 ;   |
 ;   | --- Folder_1_2
-;    				  | --- Folder_2_1
-;    				  |				| --- Folder_3_1
-;							|.      |
+;    		| --- Folder_2_1
+;    	    |			| --- Folder_3_1
+;					    |
 
 
 ; file_count_min：每一个文件夹包含的子文件夹数的最小值
@@ -94,11 +94,11 @@ generate_way = byNumber
 ;【可选参数】：all / leaf
 ;【参数解释】：all代表放置在所有文件夹内，leaf表示只能放置在叶子节点的文件夹内
 ;
-;																	 【N = 2 一个实例】
-;																	 【Root】根目录 
-;															   	/              \
+;																【N = 2 一个实例】
+;																【Root】根目录 
+;															 /              \
 ;												Folder_1_1                Folder_1_2
-;												/ 							         	/			   \
+;												/ 					    /			   \
 ;									Folder_2_1				      Folder_2_1	    	Folder_2_2
 ;
 ; 	   这种情况，Folder_2_1、Folder_2_1、Folder_2_2就是三个leaf（叶子节点）文件夹
@@ -111,6 +111,7 @@ generate_place = all
 ;【参数解释】：average: 生成的文件大小要符合正态分布
 file_size_distribution = average
 
+
 ```
 
 
@@ -118,12 +119,10 @@ file_size_distribution = average
 
 加入了并发，可以在生成过程中查看文件生成的进度
 
-![image-20240329105531240](/Users/edy/Library/Application Support/typora-user-images/image-20240329105531240.png)
 
 ### 使用说明
 
 * 在点击【确认】后程序会开始运行，之后可以在下面的进度条中看到文件生成的进度。在程序未运行时，操作进度的组件会被禁用；在程序生成过程中，上方的组件会被禁用
 
-![image-20240329110859785](/Users/edy/Library/Application Support/typora-user-images/image-20240329110859785.png)
 
 * 可以点击【暂停】、【继续】或者【终止】进行相应的操作。
