@@ -34,9 +34,10 @@ N = 3
 ;【Root】
 ;	|
 ;	| --- Folder_1_1
-;  	| 		| --- Folder_2_1
-;  	|		|		| --- Folder_3_1
-;  	|		|		| --- Folder_3_2
+;  	| 	| --- Folder_2_1
+;  	|		|		    | --- Folder_3_1
+;  	|		|		    | --- Folder_3_2
+;   |   |      
 ;  	|		| --- Folder_2_2
 ;   |
 ;   | --- Folder_1_2
